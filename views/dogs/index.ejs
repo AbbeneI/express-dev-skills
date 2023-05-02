@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express To-Do</title>
+</head>
+<body>
+    <h1>Dogs</h1>
+    <ul>
+        <% dog.forEach(function(d) { %>
+            <li>
+                <a href="/dogs/<%= d.name %>">
+                    <%= d.dog %>
+                </a>
+                <%= d.dog %>
+                    <%= 'Name: ' + d.name %> 
+                    <%= 'Breed: ' + d.breed %> 
+
+                    <%= d.friendly ? 'Friendly' : 'Not Friendly' %>
+            </li>
+            <% }); %>
+    </ul>
+</body>
+</html>
