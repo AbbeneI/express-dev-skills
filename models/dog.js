@@ -11,8 +11,9 @@ function getAll()  {
 }
 
 //READ - show 1 object based on the id
-function getBreed(breed) {
+function getBreed(name) {
 	// req.params come in as strings always. If we need another data type we need to change that string to the type we need
+	
 	
 	// I want to find the first element/item that matches my check
 	// If nothing is found matching that check I want to return -1
@@ -24,7 +25,7 @@ function getBreed(breed) {
 	// });
 	// return dogArr;
 
-	return dogs.find(dog => dog.breed === breed)
+	return dogs.find(dog => dog.name === name);
 
 }
 
